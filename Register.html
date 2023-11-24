@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        label{
+        font-family: roboto;
+        font-weight: 700;
+        color: white;
+        
+    }
+    input{
+        padding: 7px;
+        border: 2px solid grey;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        background-color: rgb(199, 197, 197);
+        color:black;
+        width: 220px;
+       
+    }
+    button{
+        padding: 7px;
+        background-color: yellow;
+        font-family: roboto;
+        font-weight: 700;
+        border-radius: 7px;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+   form{
+        margin-left: 30px;
+
+    }
+    .formhead{
+        color: yellow;
+        font-family:roboto;
+        font-weight: 700;
+        font-size: 45px;
+        text-align: center;
+        padding-left:0px;
+        margin: 0;
+        padding: 0;
+    }
+        .outer{
+            width: 100%;
+            height:615px;
+            background-color: grey;
+            padding-top: 100px;
+            padding-left: 600px;
+            padding-right: 0px;
+            display: inline-block;
+
+        }
+        .inner{
+            width:20%;
+            height:500px;
+            background-color: black;
+    display: inline-block;
+   
+        
+        }
+        a{
+            color: yellow;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: roboto;
+            font-weight: 700;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="outer"><div class="inner">
+        <p class="formhead">Register</p>
+    <form method="POST" action="samp_register.php"  >
+        <label for="Name" >Enter Your Name:</label><br>
+         <input type="text" autofocus required placeholder="Your Name" id="Name" name="N" ><br>
+         <label for="Email">Enter Your Email:</label><br>
+         <input type="email" required placeholder="abc@gmail.com" id="Email" name="E"><br>
+         <button type="submit">SUBMIT</button><br>
+         <a href="login.html">&raquo;Existing user? Login.</a>
+         <a href="pixhub.php">&laquo;Go back to home page</a>
+        </div></div>
+     </form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+    .mydiv{
+        width: 100%;
+        Height:100%;
+        background-color: black;
+        margin-top:175px;
+        display: flexbox;
+    }
+    td{
+        color: yellow;
+        font-weight: bold;
+    }
+    .custombutton{
+        color:yellow;
+        /*background-color: rgb(181, 22, 181);*/
+        background-image: linear-gradient(180deg, red, yellow);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom:5px ;
+        font-weight: bold;
+        border-radius: 15%;
+    }
+    table{
+        margin:0 auto;
+        border: 2px solid whitesmoke;
+    }
+    h1{
+        color:yellow;
+        text-align: center;
+    }
+    a{
+            color: yellow;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: roboto;
+            font-weight: 700;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="mydiv">
+        <h1>PIXHUB</h1>
+    <form action="Adminaddimage.php" method="post" enctype="multipart/form-data">
+<table  cellspacing="10" cellpadding="10">
+    <tr>
+        <td>Image ID:</td>
+        <td>
+            <input type="text" name="id" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Image Name:
+        </td>
+        <td>
+            <input type="text" name="name" required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Image:
+        </td>
+        <td>
+            <input type="file" name="image" accept="image/"  required>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Image Link:
+        </td>
+        <td>
+            <input type="text" name="link" required>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2">
+            <button type="submit" class="custombutton">Add</button>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2">
+            <a href="pixhubadmin.php">&laquo;Go back to home page</a>
+        </td>
+    </tr>
+</table>
+</form>
+</div>
+</body>
+</html>
